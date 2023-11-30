@@ -10,11 +10,13 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
 <body>
-
     <div class="container">
         <h1 style="text-align: center">Form</h1>
 
         <form action="handler.php" method="post">
+
+            <input type="hidden" name="frm_php">
+
             <div class="mb-3">
                 <label class="form-label" for="name">Name:</label>
                 <input class="form-control" type="text" name="u_name" id="name">
@@ -46,12 +48,12 @@
                 <p>Gender:</p>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="gender" id="g">
+                    <input class="form-check-input" type="checkbox" name="gender[]" id="g" value="m">
                     <label class="form-check-label" for="g">male</label>
                 </div>
 
                 <div class="form-check form-check-inline">
-                    <input class="form-check-input" type="checkbox" name="gender" id="g">
+                    <input class="form-check-input" type="checkbox" name="gender[]" id="g" value="f">
                     <label class="form-check-label" for="g">female</label>
                 </div>
             </div>
