@@ -29,10 +29,10 @@
                 <input class="form-control" type="date" name="u_tel" id="date">
             </div>
 
-            <div class="select">
+            <div class="mb-3">
                 <p>Main programming language:</p>
                 <select class="form-select" aria-label="Default select example" name="languages[]">
-                    <option selected>Open this select menu</option>
+                    <option disabled selected>Open this select menu</option>
                     <option value="cpp">C++</option>
                     <option value="cs">C#</option>
                     <option value="php">PHP</option>
@@ -41,7 +41,7 @@
                 </select>
             </div>
 
-                <button class="btn btn-primary mt-4" type="submit" name="submit">SUBMIT</button>
+            <button class="btn btn-primary mt-4" type="submit" name="submit">SUBMIT</button>
 
         </form>
     </div>
