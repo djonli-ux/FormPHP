@@ -29,7 +29,7 @@
                 <input class="form-control" type="tel" name="u_tel" id="tel">
 
                 <label class="form-label" for="date">Birthday date:</label>
-                <input class="form-control" type="date" name="u_tel" id="date">
+                <input class="form-control" type="date" name="u_date" id="date">
             </div>
 
             <div class="mb-3">
