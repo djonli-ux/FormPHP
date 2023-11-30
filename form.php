@@ -20,7 +20,8 @@
                 <input class="form-control" type="text" name="u_name" id="name">
 
                 <label class="form-label" for="email">Email</label>
-                <input class="form-control" type="email" name="u_email" id="email">
+                <input class="form-control" type="email" name="u_email" id="email" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text mb-1">We'll never share your email with anyone else.</div>
 
                 <label class="form-label" for="tel">Phone number:</label>
                 <input class="form-control" type="tel" name="u_tel" id="tel">
@@ -30,8 +31,8 @@
             </div>
 
             <div class="mb-3">
-                <p>Main programming language:</p>
-                <select class="form-select" aria-label="Default select example" name="languages[]">
+                <label class="form-label" for="lang">Enter your main programming language:</label>
+                <select class="form-select" aria-label="Default select example" name="languages[]" id="lang">
                     <option disabled selected>Open this select menu</option>
                     <option value="cpp">C++</option>
                     <option value="cs">C#</option>
@@ -41,8 +42,21 @@
                 </select>
             </div>
 
-            <button class="btn btn-primary mt-4" type="submit" name="submit">SUBMIT</button>
+            <div class="mb-3">
+                <p>Gender:</p>
 
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="gender" id="g">
+                    <label class="form-check-label" for="g">male</label>
+                </div>
+
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" name="gender" id="g">
+                    <label class="form-check-label" for="g">female</label>
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-4" type="submit" name="submit">SUBMIT</button>
         </form>
     </div>
 
